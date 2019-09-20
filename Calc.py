@@ -2,7 +2,7 @@
 import os
 print("Please wait")
 #make a new command called palc()
-def palc():
+def Calc():
     while True:
         print()
         print("Welcome to Palc!")
@@ -186,4 +186,4 @@ def palc():
             ''')
 
 print()
-palc() #run the Calc() command above
+Calc() #run the Calc() command above
