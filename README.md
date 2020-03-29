@@ -1,5 +1,6 @@
 # python-text-calculator
 
+###### NOTE: python-text-calculator:notPalc is officially discontinued. This is an outdated version of Palc, and probably contains some bugs. Just, don't.
 
 This is a Python script I forked when I wanted to learn math in Python.
 
