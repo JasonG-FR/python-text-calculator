@@ -9,12 +9,12 @@ try:
 except:
     couldNotFindRoot = True
     logging.error("Could not access file root.py")
-    print("I can't find file root.py, and therefore you cannot calculate roots.")
+    print("Je ne peux pas trouver la fichier root.py, et donc tu ne peux pas calculer les racines carres.")
 try:
     from func import *
 except:
     logging.critical("Could not access file func.py")
-    e("I can't access the file func.py. This file is necessary for proper function of the Software.")
+    e("Je ne peux pas trouver la fichier func.py, et donc la programme ne peux pas continuer.")
 print("Loading...............\n")
 time.sleep(2)
 def palc():
