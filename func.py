@@ -1,5 +1,7 @@
 import logging
 from cprint import *
+if __name__ == "__main__":
+    print("Please do not run any of these files directly. They don't do anything useful on their own.")
 def getNum(): #ask for two numbers and then return to function
     n1 = int(input(_("Please enter the first number: ")))
     n2 = int(input(_("Please enter the second number: ")))
@@ -245,4 +247,4 @@ def sin():
         logging.info(("User cos'ed number ", number, " getting result of ", res))
     elif which == "inverse":
         print(_("Inverse it is!"))
-        number = float(input(_("Enter the number: ")))
+        number = float(input(_("Enter the number: ")))     

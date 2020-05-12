@@ -1,4 +1,6 @@
 from volume import *
+if __name__ == "__main__":
+    print("Please do not run any of these files directly. They don't do anything useful on their own.")
 def cuvol():
     a = int(input(_("What length is the side of the cube? ")))
     vol_cube(a)
