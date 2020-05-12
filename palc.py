@@ -231,14 +231,14 @@ except KeyboardInterrupt: #if ^C
     logging.info("KeyboardInterrupt")
     cprint.ok(_("\nNote that you CAN type `quit' instead of pressing the interrupt key"), interrupt=True)
 except EOFError: #if ^D
-    logging.ok("EOFError")
+    logging.info("EOFError")
     cprint.ok(_("\nWhy ^D? Why not just type `quit'?"), interrupt=True)
 except (ValueError, TypeError):
     logging.critical("ValueError or TypeError")
     cprint.fatal(_("You typed in an invalid integer or float. Or maybe the program needs debugging. Either way, it's a pretty big error."), interrupt=True)
 except SystemExit:
     cprint.ok(_("Looks like you exited."))
-#except:
-#    logging.critical("Unknown Error")
-#    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
+except:
+    logging.critical("Unknown Error")
+    cprint.fatal(_("An unknown error occured. Please file an Issue at github.com/thetechrobo/support.")) 
 #EOF

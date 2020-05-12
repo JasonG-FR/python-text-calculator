@@ -13,8 +13,7 @@ def h():
      '''))
 def multi(): #multiplication
     n1, n2 = getNum()
-    cprint.info(_("\nThat equals..."))
-    cprint.info(n1 * n2)
+    cprint.info(_("\nThat equals...\n%s" % (n1 * n2)))
     logging.info(("User multiplied ", n1, " by ", n2, " and got result ", (n1 * n2)))
 def div(): #division
     n1, n2 = getNum()
@@ -234,7 +233,7 @@ Choose one: """)))
         print(_("After tax, the price is: \n%s" % newPrice))
     else:
         print(_("You did not type answer. Abort."))
-def cosine():
+def sin():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
     if which == "sin":
