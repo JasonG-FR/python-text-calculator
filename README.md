@@ -1,4 +1,5 @@
 # python-text-calculator
+# NOTE -- The development branch has been discontinued because I keep forgetting to use it
 
 **Please, if you make a pull request add your username to CONTRIBUTORS.md**
 
