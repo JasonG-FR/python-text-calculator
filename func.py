@@ -235,6 +235,18 @@ Choose one: """)))
         print(_("After tax, the price is: \n%s" % newPrice))
     else:
         print(_("You did not type answer. Abort."))
+def tempCalc():
+    hi = int(input(_('''OPTIONS:
+    1 - Farenheit to Celsius
+    2 - Celsius to Farenheit
+    3 - Farenheit to Kelvin
+    4 - Celsius to Kelvin
+    5 - Kelvin to Celsius
+    6 - Kelvin to Farenheit
+    Type: ''')))
+    if hi == 1:
+        hello = float(input(_("Please enter the FARENHEIT temperature: ")))
+        howdy = float(input(_("Please enter the CELSIUS temperature: ")))
 def sin():
     which = input(_("Would you like sine or inverse sine? (sin / inverse)\nType: "))
     which = which.lower()
